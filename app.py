@@ -1,9 +1,15 @@
 from flask import Flask, jsonify, request
 import pandas as pd
 
+
+from flask import Flask
+from flask_cors import CORS
+
+
 CSV_PATH = "books.csv"
 
 app = Flask(__name__)
+CORS(app)
 
 def load_books():
     df = pd.read_csv(CSV_PATH)
