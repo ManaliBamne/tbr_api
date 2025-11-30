@@ -51,7 +51,7 @@ The system has two main parts:
      - Author  
      - Short notes describing the vibe
 
-The current v1 prototype wires the **Soft & Slow** mood to a live API call and shows **static examples** for the other moods.
+The current v1 prototype wires all four moods (“Soft & Slow”, “Deep‑dive grind”, “Chaos & fun”, and “Big thinky brain”) to live API calls. Each mood chip triggers a call to /mood?tag=... and displays a random unread book that matches that mood.
 
 ***
 
@@ -395,14 +395,3 @@ This would turn the UI into a true, interactive “Tinder for TBR” experience.
 
 ***
 
-## 10. How to Present This Project (PM / Portfolio Angle)
-
-- **User problem:** decision fatigue choosing from an unread shelf.  
-- **Insight:** mood and energy level matter more than genre when users are overwhelmed.  
-- **Solution:** a mood‑based assistant that gives exactly one suggestion.  
-- **Execution:**  
-  - Designed conversational copy and mood taxonomy.  
-  - Implemented a backend API and wired it into a real UI.  
-  - Managed timeboxing: shipped a constrained but working v1, with clear future enhancements.
-
-This README serves both as technical documentation and as a narrative you can translate into a case study, portfolio page, or talking points for interviews.
